@@ -1,4 +1,4 @@
-````
+
 
 // digital pin 2 has a pushbutton attached to it. Give it a name:
 const int pushButton = 2;
@@ -43,4 +43,4 @@ void loop() {
   delay(1);        // delay in between reads for stability
 }
 
-````
+]
