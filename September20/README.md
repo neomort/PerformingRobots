@@ -9,6 +9,8 @@ Not really it was actually quite an enjoyable build!
 
 ![starting the build](Images/process.jpeg)
 
+^^Starting the build^^
+
 _Physical Description:_
 
 - the bot is driven by 2 brushless DC motors and supported by a third wheel or skate, made out of a can of coke. A standard H-bridge drives the motors via an arduino Uno. 
