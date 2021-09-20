@@ -9,7 +9,7 @@ Not really it was actually quite an enjoyable build!
 
 ![starting the build](Images/process.jpeg)
 
-^^Starting the build^^
+^^Starting the build by opening up the bottom^^
 
 _Physical Description:_
 
