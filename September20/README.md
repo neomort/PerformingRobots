@@ -7,7 +7,7 @@ I decided to make my first robot for this class out of a Cereal box I had saved.
 
 Not really it was actually quite an enjoyable build!
 
-![starting the build](Images/process.jpg)
+![starting the build](https://cdn.mos.cms.futurecdn.net/BX7vjSt8KMtcBHyisvcSPK-1200-80.jpg)
 
 _Physical Description:_
 
