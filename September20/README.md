@@ -7,6 +7,8 @@ I decided to make my first robot for this class out of a Cereal box I had saved.
 
 Not really it was actually quite an enjoyable build!
 
+![starting the build](/Images/process.jpg)
+
 _Physical Description:_
 
 - the bot is driven by 2 brushless DC motors and supported by a third wheel or skate, made out of a can of coke. A standard H-bridge drives the motors via an arduino Uno. 
@@ -17,5 +19,6 @@ _Physical Description:_
 
 _Problems_
 
-- my main problem during this build was making sure All of my connections were tight. I will upload another video of a time when My light would turn on whenever a person got close to the robot (creepy!) I fixed this by using a simpler button and gluing more things down. 
+- my main problem during this build was making sure All of my connections were tight. I uploaded another video of a time when My light would turn on whenever a person got close to the robot (creepy!) I fixed this by using a simpler button and gluing more things down. 
+- https://youtu.be/N6pxXEIREho
 
