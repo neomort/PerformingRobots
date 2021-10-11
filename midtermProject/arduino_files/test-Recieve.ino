@@ -41,12 +41,12 @@ const int rightDirPin = 3;
 const int rightPWMPin = 4;
 const int leftDirPin = 5;
 const int leftPWMPin = 6;
-const int button = 14;
+const int button1 = 14;
 
 void setup() {
 
 
-  pinMode(button, INPUT);
+  pinMode(button1, INPUT);
 
   // Motor controller pins
   pinMode(rightDirPin, OUTPUT);
@@ -54,8 +54,8 @@ void setup() {
 
   Serial.begin(115200);
 
-  // RF24 setup
-   if (!radio.begin()) {
+ // RF24 setup
+  if (!radio.begin()) {
     Serial.println("radio  initialization failed");
     while (1)
       ;
@@ -92,52 +92,49 @@ void loop() {
 
     switch (data) {
         
-      case 0b10000000:
-//        Serial.println("turning right");
-//        digitalWrite(rightDirPin, LOW);
-//        analogWrite(rightPWMPin, 255);
-//        break;
-        Serial.println("backward");
+      case 1:
+ 
+        Serial.println("forward");
         digitalWrite(rightDirPin, HIGH);
         analogWrite(rightPWMPin, 0);
         digitalWrite(leftDirPin, HIGH);
         analogWrite(leftPWMPin, 0);
         break;
-      case 0b01000000:
-        Serial.println("forward");
+      case 8:
+        Serial.println("backward");
         digitalWrite(rightDirPin, LOW);
         analogWrite(rightPWMPin, 255);
         digitalWrite(leftDirPin, LOW);
         analogWrite(leftPWMPin, 255);
         break;
-      case 0b00100000:
+      case 4:
         Serial.println("turning left");
         digitalWrite(leftDirPin, LOW);
         analogWrite(leftPWMPin, 255);
         digitalWrite(rightDirPin, HIGH);
         analogWrite(rightPWMPin, 0);
         break;
-      case 0b00010000:
+      case 2:
         Serial.println("turning right");
         digitalWrite(leftDirPin, HIGH);
         analogWrite(leftPWMPin, 0);
         digitalWrite(rightDirPin, LOW);
         analogWrite(rightPWMPin, 255);
         break;
-        case 0b00001000:
+        case 64:
         Serial.println("Nod");
          servo1.write(100);
          delay(300);
          servo1.write(0);
          delay(300);
         break;
-        case 0b00000100:
+        case 16:
         Serial.println("Nod");
          servo1.write(50);
          servo2.write(180);
          servo3.write(40);
         break;
-        case 0b00000010:
+        case 32:
         Serial.println("shake");
          servo1.write(0);
          servo2.write(0);
