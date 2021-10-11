@@ -1,4 +1,5 @@
 
+
    
 /*
    Example using the nRF24L01 radio module to communicate 
@@ -37,14 +38,20 @@ RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 const byte address[6] = "00001"; 
 
 // Pins for the pushbuttons
-const int leftPin = 2;
-const int rightPin = 4;
-const int fwdPin = 7;
+const int fwdPinR = 2;
+const int rightPinR = 3;
+const int leftPinR = 4;
+const int bkwdPinR = 5; 
+const int fwdPinL = 6; 
+const int rightPinL = 7;
+const int leftPinL = 8;
+//const int bkwdPinL = 1;
+
 
 void setup() {
   Serial.begin(115200);
 
-  boolean retval = radio.begin();   //Starting the Wireless communication
+   boolean retval = radio.begin();   //Starting the Wireless communication
   Serial.println(retval);
   radio.openWritingPipe(address);  //destination addres
   radio.setPALevel(RF24_PA_MIN);   // min or max
@@ -52,15 +59,40 @@ void setup() {
 }
 void loop() {
 
-int left = digitalRead(leftPin) << 2;
-int fwd = digitalRead(fwdPin) << 1;
-int right = digitalRead(rightPin) << 0;
-int data = left | fwd | right;
+int leftR = digitalRead(fwdPinR) << 0;
+int fwdR = digitalRead(rightPinR) << 1;
+int rightR = digitalRead(bkwdPinR) << 2;
+int bkwdR = digitalRead(leftPinR) << 3;
+int leftL = digitalRead(leftPinL) << 4;
+int fwdL = digitalRead(fwdPinL) << 5;
+int rightL = digitalRead(rightPinL) << 6;
+//int bkwdL = digitalRead(bkwdPinL) << 7;
 
+//Serial.print(leftR);
+//Serial.print(",");
+//Serial.print(fwdR);
+//Serial.print(",");
+//Serial.print(rightR);
+//Serial.print(",");
+//Serial.print(bkwdR);
+//Serial.print(",");
+//Serial.print(leftL);
+//Serial.print(",");
+//Serial.print(fwdL);
+//Serial.print(",");
+//Serial.print(rightL);
+//Serial.print(",");
+//Serial.println(bkwdL);
+//delay(20);
+// | bkwdL
+int data = leftR | fwdR | rightR | bkwdR | leftL | fwdL | rightL;
 
     if (data) {
       Serial.print( "sending data = " );
       Serial.println(data);
       radio.write(&data, sizeof(data)) ;
     }
+
+//    data = analogRead (A0);
+//    radio.write(&data, sizeof(data)) ;
 }
