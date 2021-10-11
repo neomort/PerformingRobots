@@ -102,7 +102,7 @@ void loop() {
         break;
     }
   } else {
-    Serial.println("stop");
+    //Serial.println("stop");
     stop();
   }
   delay(5);
