@@ -31,4 +31,4 @@ With that as the framework for the performance, I can get into building Macduff,
 
 *How will you decorate or dress the actor for best effect?*
  
-	I think it would be really fun to dress up Macduff-bot like he was from the eleventh century with a little tunic- especially if the weapon was a sword.
+I think it would be really fun to dress up Macduff-bot like he was from the eleventh century with a little tunic- especially if the weapon was a sword.
