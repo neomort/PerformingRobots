@@ -15,19 +15,19 @@ With that as the framework for the performance, I can get into building Macduff,
 
 ### There are a few things that I think must be visible in this scene. 
 1. The beginning of the scene is rather mundane-- mostly the exchange of information. Macduff responds to the others with thoughts on how his county is falling apart, but remains composed.
-- The robot needs to respond to information, verbally (through a microphone either on the robot itself or in a place where it could seem like it is coming from the robot)
-- The robot needs to be capable of basic locomotion, perhaps on wheels, just so this part of the scene has some movement.
+ - The robot needs to respond to information, verbally (through a microphone either on the robot itself or in a place where it could seem like it is coming from the robot)
+ - The robot needs to be capable of basic locomotion, perhaps on wheels, just so this part of the scene has some movement.
 2. When Ross breaks the news that Macduff’s family has all been brutally murdered, Macduff breaks. He goes silent, withdraws (putting his cap over his eyes) and begins to weep.  
-- Macduff-bot needs to respond to this information non-verbally. If the robot has a face of neopixels, or even a single dynamic LED, it would be possible to signal this gradual realization through a slow change in color 
-- After this he turns away from the audience and covers his face with a cap. I would love it if the robot’s head could retract into its body, like in Wall-e (wall-e’s eyes retract into his body and he becomes a cube when he is scared). 
+ - Macduff-bot needs to respond to this information non-verbally. If the robot has a face of neopixels, or even a single dynamic LED, it would be possible to signal this gradual realization through a slow change in color 
+ - After this he turns away from the audience and covers his face with a cap. I would love it if the robot’s head could retract into its body, like in Wall-e (wall-e’s eyes retract into his body and he becomes a cube when he is scared). 
 3. He asks again if it is true, then falls to the ground, going through the stages of grief in short succession. He cries and moans while giving his speech. 
-- The robot’s head would pop out again to speak.
-- The robot needs to cry. This could be done by making the robot mime tears either with hands over the face or lowering its head again. But I think it would be more interesting, and more indicative of the self-destruction that Macduff is feeling to have actual watery tears. I would do this by having a syringe inside the robot's head full of water. When the robot cries a small motor would press on the syringe, letting water drip down the face/ front side of the bot. 
+ - The robot’s head would pop out again to speak.
+ - The robot needs to cry. This could be done by making the robot mime tears either with hands over the face or lowering its head again. But I think it would be more interesting, and more indicative of the self-destruction that Macduff is feeling to have actual watery tears. I would do this by having a syringe inside the robot's head full of water. When the robot cries a small motor would press on the syringe, letting water drip down the face/ front side of the bot. 
 4. While on the ground, Malcolm eggs him on, fostering his rage and telling him to get revenge. “Let grief convert to anger. Blunt not the heart; enrage it.” Malcom hands him the sword which he takes.
-- I picture the sword, which in this case could be a gun or other weapon (futuristic robots and such), descending slowly from the ceiling on a string. 
-- Macduff would need at least one hand or limb in order to take this weapon and raise it.
+ - I picture the sword, which in this case could be a gun or other weapon (futuristic robots and such), descending slowly from the ceiling on a string. 
+ - Macduff would need at least one hand or limb in order to take this weapon and raise it.
 5. Macduff rises, sword drawn, fuming with the prospect of revenge.
-- The robot doesn’t need to take the weapon off of the string, but does need to brandish it in some way. 
+ - The robot doesn’t need to take the weapon off of the string, but does need to brandish it in some way. 
 
 *How will you decorate or dress the actor for best effect?*
  
