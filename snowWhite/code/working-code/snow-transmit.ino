@@ -1,4 +1,5 @@
 
+
    
 /*
    Example using the nRF24L01 radio module to communicate 
@@ -44,7 +45,7 @@ const int bkwdPinR = 5;
 const int fwdPinL = 6; 
 const int rightPinL = 7;
 const int leftPinL = 8;
-//const int bkwdPinL = 1;
+const int bkwdPinL = A0;
 const int pot1 = A5;
 
 void setup() {
@@ -65,7 +66,7 @@ int bkwdR = digitalRead(leftPinR) << 3;
 int leftL = digitalRead(leftPinL) << 4;
 int fwdL = digitalRead(fwdPinL) << 5;
 int rightL = digitalRead(rightPinL) << 6;
-//int bkwdL = digitalRead(bkwdPinL) << 7;
+int bkwdL = digitalRead(bkwdPinL) << 7;
 int pot1Val = analogRead(pot1);
 
 
@@ -87,7 +88,7 @@ int pot1Val = analogRead(pot1);
 //Serial.println(bkwdL);
 //delay(20);
 // | bkwdL
-int data = leftR | fwdR | rightR | bkwdR | leftL | fwdL | rightL;
+int data = leftR | fwdR | rightR | bkwdR | leftL | fwdL | rightL | bkwdL;
 //Serial.println(pot1Val);
     if (data) {
       
