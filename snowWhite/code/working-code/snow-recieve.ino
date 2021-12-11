@@ -134,6 +134,12 @@ void loop() {
         leftArm.write(leftAngle);
         rightArm.write(rightAngle);
         break;
+        case 128:
+        leftAngle++;
+        rightAngle--;
+        leftArm.write(leftAngle);
+        rightArm.write(rightAngle);
+        break;
       }
   } else {
     Serial.println("stop");
